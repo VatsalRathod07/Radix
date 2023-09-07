@@ -48,7 +48,6 @@ const Home = () => {
         top: 0,
         left: 0,
         width: '100%',
-        height: '100%',
         background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
         display: 'flex',
         flexDirection: 'column',
@@ -72,9 +71,9 @@ const Home = () => {
                 {CarouselImage.map((carousel) => {
                     return (
                         <div key={carousel.id}>
-                            <img src={carousel.img} alt="image" className="w-full h-[600px] object-cover" />
+                            <img src={carousel.img} alt="image" className="w-full h-[400px] lg:h-[600px] object-cover" />
                             <div style={gradientOverlayStyle}>
-                                <p className="text-3xl font-Oswald capitalize">{carousel.title}</p>
+                                <p className="lg:text-3xl font-Oswald capitalize">{carousel.title}</p>
                             </div>
                         </div>
                     )

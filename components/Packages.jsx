@@ -7,7 +7,7 @@ const PakagesData = [
   {
     id: 1,
     img: 'https://assets.isu.pub/document-structure/230424065209-93b9a472898d270bf5b0be8544b0f4cb/v1/4a115288289e5f07a372bea691b7fa96.jpeg',
-    title: 'PORT BLAIR AND HAVELOCK ISLAND 3 STAR PACKAGE FOR 5 DAYS(CODE : 73552)',
+    title: 'PORT BLAIR AND HAVELOCK ISLAND 3 STAR PACKAGE FOR 5 DAYS (CODE : 73552)',
     price: 'Rs. 15493.00',
     date: 'Valid Till 10-01-2023',
     person: 'Package Per Person (1 Person)',
@@ -16,7 +16,7 @@ const PakagesData = [
   {
     id: 2,
     img: 'https://www.tourmyindia.com/states/goa/image/beaches-goa.webp',
-    title: 'GOA 2 STAR PACKAGE FOR 4 DAYS WITH BREAKFAST(CODE : 84394)',
+    title: 'GOA 2 STAR PACKAGE FOR 4 DAYS WITH BREAKFAST (CODE : 84394)',
     price: 'Rs. 6294.00',
     date: 'Valid Till 02-01-2023',
     person: 'Package Per Person (1 Person)',
@@ -25,7 +25,7 @@ const PakagesData = [
   {
     id: 3,
     img: 'https://digitalnomads.world/wp-content/uploads/2021/01/bali-for-digital-nomads.jpg',
-    title: 'ENJOY BALI FOR 3 NIGHTS 4 DAYS AT CLUB MED BALI(CODE : 100286)',
+    title: 'ENJOY BALI FOR 3 NIGHTS 4 DAYS AT CLUB MED BALI (CODE : 100286)',
     price: 'Rs. 41031.00',
     date: 'Valid Till 30-11-2022',
     person: 'Package Per Person (1 Person)',
@@ -34,7 +34,7 @@ const PakagesData = [
   {
     id: 4,
     img: 'https://images.unsplash.com/photo-1549810197-0cf0fa18ae82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80',
-    title: 'SHIMLA, MANALI AND CHANDIGARH 3 STAR PACKAGE FOR 07 DAYS(CODE : 76808)',
+    title: 'SHIMLA, MANALI AND CHANDIGARH 3 STAR PACKAGE FOR 07 DAYS (CODE : 76808)',
     price: 'Rs. 19415.00',
     date: 'Valid Till 19-12-2022',
     person: 'Package Per Person (1 Person)',
@@ -43,7 +43,7 @@ const PakagesData = [
   {
     id: 5,
     img: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80',
-    title: 'KERALA 3 STAR PACKAGE FOR 7 DAYS(CODE : 95006)',
+    title: 'KERALA 3 STAR PACKAGE FOR 7 DAYS (CODE : 95006)',
     price: 'Rs. 22725.00',
     date: 'Valid Till 31-03-2023',
     person: 'Package Per Person (1 Person)',
@@ -52,7 +52,7 @@ const PakagesData = [
   {
     id: 6,
     img: 'https://images.unsplash.com/photo-1566830646346-908d87490bba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    title: 'THAILAND - BANGKOK AND PATTAYA 4 STAR PACKAGE FOR 5 DAYS(CODE : 100402)',
+    title: 'THAILAND - BANGKOK AND PATTAYA 4 STAR PACKAGE FOR 5 DAYS (CODE : 100402)',
     price: 'Rs. 13042.00',
     date: 'Valid Till 31-03-2023',
     person: 'Package Per Person (1 Person)',
@@ -72,13 +72,13 @@ const Packages = () => {
   };
 
   return (
-    <section className="container mx-auto px-5 py-10 flex flex-col gap-5">
+    <section className="container mx-auto px-2 lg:px-5 py-10 flex flex-col gap-5">
       <div className="flex flex-col gap-2">
         <h3 className="text-xl font-Oswald text-CharcoalGray">OUR SPECIAL PACKAGES</h3>
-        <h1 className="text-black text-4xl font-Oswald font-semibold">SPECIAL PACKAGES OFFER</h1>
+        <h1 className="text-black text-3xl md:text-4xl lg:text-4xl font-Oswald font-semibold">SPECIAL PACKAGES OFFER</h1>
       </div>
 
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {PakagesData.map((data) => {
           return (
             <div className="shadow-md" key={data.id}>

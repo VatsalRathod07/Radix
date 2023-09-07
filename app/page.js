@@ -4,6 +4,7 @@ import Global from '@/components/Global'
 import Home from '@/components/Home'
 import Packages from '@/components/Packages'
 import Serivces from '@/components/Serivces'
+import Testimonial from '@/components/Testimonial'
 import React from 'react'
 
 const page = () => {

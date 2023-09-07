@@ -20,11 +20,11 @@ const expertiseData = [
 
 const Company = () => {
     return (
-        <section className="container mx-auto px-5 py-14 gap-20">
+        <section className="container mx-auto px-2 lg:px-5 py-14 gap-20">
             <div className="flex flex-col justify-items-center items-center gap-14">
-                <div className="grid grid-cols-2 gap-7 justify-center items-center">
+                <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-7 justify-center items-center">
                     <div className="flex flex-col gap-5">
-                        <h1 className="font-Oswald text-4xl font-bold">WELCOME TO RADIX GROUP</h1>
+                        <h1 className="font-Oswald text-2xl md:text-4xl lg:text-4xl font-bold">WELCOME TO RADIX GROUP</h1>
                         <p className="text-base font-medium text-CharcoalGray font-DMSans">Established in 2014, Radix Group is Reputed Firm Offering Good Quality & Services with Stock & Commodities Market Services and Wealth Management to Retail Client. These include Equity, Currency and Commodity Trading. We Also Provide Tours & Travel Services, Passport Services, Flight & Hotel Booking, Insurance as well as Portfolio Management Services. We continue to focus on what we do best, Delivering Powerful Services and Easy-to-use Technology.</p>
                     </div>
 

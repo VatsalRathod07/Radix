@@ -45,13 +45,13 @@ const ImageGallery = [
 
 const Gallery = () => {
     return (
-        <section className="container mx-auto px-5 py-10">
+        <section className="container mx-auto px-2 lg:px-5 py-10">
             <div className="flex flex-col gap-5">
-                <h1 className="text-black text-4xl font-Oswald font-semibold">RADIX GROUP GALLERY</h1>
+                <h1 className="text-black text-2xl md:text-4xl lg:text-4xl font-Oswald font-semibold">RADIX GROUP GALLERY</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
                     {ImageGallery.map((image) => {
                         return (
-                            <div className="relative group overflow-hidden cursor-pointer">
+                            <div className="relative group overflow-hidden cursor-pointer" key={image.id}>
                                 <img src={image.img} alt={image.title} className="w-full h-[200px] object-cover transition duration-500 ease-in-out group-hover:scale-110 text-black" />
                                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-70 transition duration-500 ease-in-out"></div>
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 ease-in-out">
