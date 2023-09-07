@@ -58,7 +58,7 @@ const Header = () => {
         {
             path: '',
             name: 'Services',
-            subroutes:[
+            subroutes: [
                 {
                     path: '/services/passport-services',
                     name: 'Passport Services'
@@ -111,7 +111,7 @@ const Header = () => {
                     <div className="divide-y">
                         {routes.map((route) => (
                             <Link key={route.name} href={route.path} onClick={toggleSidebar} className={`block p-4 hover:bg-gray-200 ${pathname === route.path ? 'font-bold' : ''}`}>
-                                    {route.name}
+                                {route.name}
                             </Link>
                         ))}
                     </div>
@@ -132,7 +132,7 @@ const Header = () => {
                             {routes.map((route) => (
                                 <div key={route.name}>
                                     <Link href={route.path} className={`font-Oswald text-lg uppercase font-normal ${pathname === route.path ? 'active-link' : ''}`}>
-                                            {route.name}
+                                        {route.name}
                                     </Link>
                                 </div>
                             ))}
